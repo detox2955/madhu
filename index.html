@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 350px;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #888;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+        .form-group input:focus {
+            border-color: #3f729b;
+            outline: none;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #0078d4;
+        }
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .divider:before, .divider:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+        .divider:before {
+            left: 0;
+        }
+        .divider:after {
+            right: 0;
+        }
+        .divider span {
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #888;
+            background-color: #fafafa;
+            position: relative;
+            z-index: 1;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .signup-link a {
+            font-size: 14px;
+            color: #0095f6;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Instagram</h1>
+        
+        <!-- Login Form -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Phone number, username, or email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <!-- Forgot Password Link -->
+        <div class="signup-link">
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <!-- Sign-up Link -->
+        <div class="signup-link">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
